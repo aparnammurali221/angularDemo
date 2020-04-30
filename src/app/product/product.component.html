@@ -1,0 +1,41 @@
+<!-- <p>product works!</p> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+</head>
+<body>
+    
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Desc</th>
+            <th>Price</th>
+            <th>Manufacture Date</th>
+            <th>Expiration Date</th>
+            
+        </tr>
+        <tr *ngFor='let product of (display)'>
+            <td>{{product.Name}}</td>
+            <td>{{product.Desc}}</td>
+            <td>{{product.Price}}</td>
+            <td>{{product.ManuDate}}</td>
+            <td>{{product.ExpirDate}}</td>
+            
+            
+        </tr>
+    </table>
+    <br><br>
+    <button (click) = "get()" value="call function">Get</button>&nbsp;&nbsp;
+    <button (click) = "post()" value="call function">Post</button>&nbsp;&nbsp;
+    <button (click) = "put()" value="call function">Put</button>&nbsp;&nbsp;
+    <button (click) = "delete()" value="call function">Delete</button>&nbsp;&nbsp;
+    
+
+ 
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+</head>
+<body>
+    
+    <table border="5">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Grade</th>
+            <th>Address</th>
+            <th>Phone Number</th>
+        </tr>
+        <tr *ngFor='let student of (read)'>
+            <td>{{student.studentID}}</td>
+            <td>{{student.studentName}}</td>
+            <td>{{student.studentGrade}}</td>
+            <td>{{student.Address}}</td>
+            <td>{{student.PhoneNumber}}</td>
+            
+        </tr>
+    </table>
+    <br><br>
+    <button (click) = "get()" value="call function">Get</button>&nbsp;&nbsp;
+    <button (click) = "post()" value="call function">Post</button>&nbsp;&nbsp;
+    <button (click) = "put()" value="call function">Put</button>&nbsp;&nbsp;
+    <button (click) = "delete()" value="call function">Delete</button>&nbsp;&nbsp;
+   
+
+
+
+</body>
+</html>
